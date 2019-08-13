@@ -1,0 +1,17 @@
+<launch>
+
+ 
+
+
+  <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+
+
+    
+  <node pkg="go_to_goal" name="go" type="goal_coordinates_server.py">
+  <param name="constantK" value="1.5" type="double" />
+  <param name="constantT" value="6" type="double" />
+  </node>
+    
+
+
+</launch>
